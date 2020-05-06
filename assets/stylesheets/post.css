@@ -1,0 +1,128 @@
+@import "global.css";
+@import "like.css";
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Neuton", serif;
+  font-size: 24px;
+  color: var(--main-color);
+}
+a {
+  color: var(--blue);
+}
+p em {
+  font-style: italic;
+}
+header,
+p {
+  width: 800px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-family: "DM Serif Text", serif;
+  font-size: 40px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 144px;
+}
+
+.actions .linkedin,
+.actions .twitter-share-button,
+.actions .fb {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  cursor: pointer;
+  background-color: var(--light-blue);
+}
+.actions .linkedin:hover,
+.actions .twitter-share-button:hover,
+.actions .fb:hover {
+  background-color: var(--blue);
+}
+.actions .linkedin {
+  mask: url(/assets/images/linkedin.svg) no-repeat center;
+}
+
+.actions .twitter-share-button {
+  mask: url(/assets/images/twitter.svg) no-repeat center;
+}
+
+.actions .fb {
+  mask: url(/assets/images/fb.svg) no-repeat center;
+}
+
+.actions .like {
+  background-size: 24px;
+  height: 40px;
+  width: 40px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.time,
+.original {
+  font-size: 16px;
+}
+.user-info {
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+.user-info span {
+  display: block;
+}
+
+.author img {
+  border-radius: 50%;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+.author img {
+  height: 48px;
+}
+
+.actions div.twitter {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-o span#l {
+  display: none !important;
+}
+
+.btn {
+  background-color: transparent !important;
+}
+
+#count,
+.btn,
+.btn .label,
+.btn-o,
+.count-o {
+  display: none !important;
+}
