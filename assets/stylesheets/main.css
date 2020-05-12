@@ -40,13 +40,13 @@ nav,
 }
 
 a.github {
-  mask-image: url(/assets/images/github.svg);
-  -webkit-mask-image: url(/assets/images/github.svg);
+  mask-image: url(assets/images/github.svg);
+  -webkit-mask-image: url(assets/images/github.svg);
 }
 
 a.linkedin {
-  mask: url(/assets/images/linkedin.svg);
-  -webkit-mask: url(/assets/images/linkedin.svg);
+  mask: url(assets/images/linkedin.svg);
+  -webkit-mask: url(assets/images/linkedin.svg);
 }
 
 .latest .title {
