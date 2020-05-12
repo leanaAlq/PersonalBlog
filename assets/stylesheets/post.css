@@ -1,23 +1,38 @@
 @import "global.css";
+@import "nav.css";
+@import "footer.css";
 @import "like.css";
+
+body {
+  margin: 0;
+}
+
 article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Neuton", serif;
-  font-size: 24px;
+  font-size: 16px;
   color: var(--main-color);
 }
+
 a {
   color: var(--blue);
 }
+
 p em {
   font-style: italic;
 }
+.asset,
+.player {
+  max-width: 75vw;
+}
 header,
-p {
-  width: 800px;
+p,
+figure,
+.article-img {
+  max-width: 80vw;
 }
 
 header {
@@ -25,49 +40,61 @@ header {
   flex-direction: column;
   align-items: center;
 }
+
 h1 {
   font-family: "DM Serif Text", serif;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 .actions {
   display: flex;
   justify-content: space-between;
-  width: 144px;
+  width: calc(var(--n) * 18);
 }
 
 .actions .linkedin,
-.actions .twitter-share-button,
+.actions .twitter,
 .actions .fb {
-  width: 40px;
-  height: 40px;
+  width: calc(var(--n) * 5);
+  height: calc(var(--n) * 5);
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: calc(var(--n) * 3);
   background-position: center;
   cursor: pointer;
   background-color: var(--light-blue);
 }
+
 .actions .linkedin:hover,
-.actions .twitter-share-button:hover,
+.actions .twitter:hover,
 .actions .fb:hover {
   background-color: var(--blue);
 }
+
 .actions .linkedin {
   mask: url(/assets/images/linkedin.svg) no-repeat center;
+  -webkit-mask: url(/assets/images/linkedin.svg) no-repeat center;
 }
 
-.actions .twitter-share-button {
+.actions .twitter {
   mask: url(/assets/images/twitter.svg) no-repeat center;
+  -webkit-mask: url(/assets/images/twitter.svg) no-repeat center;
 }
 
 .actions .fb {
   mask: url(/assets/images/fb.svg) no-repeat center;
+  -webkit-mask: url(/assets/images/fb.svg) no-repeat center;
 }
 
-.actions .like {
-  background-size: 24px;
-  height: 40px;
-  width: 40px;
+.actions .like,
+.actions a {
+  background-size: calc(var(--n) * 3);
+  height: calc(var(--n) * 5);
+  width: calc(var(--n) * 5);
+}
+
+p {
+  font-size: 2em;
+  word-wrap: break-word;
 }
 
 .info {
@@ -75,13 +102,9 @@ h1 {
   width: 100%;
   justify-content: space-around;
 }
-.time,
-.original {
-  font-size: 16px;
-}
+
 .user-info {
-  font-size: 16px;
-  padding-left: 8px;
+  padding-left: var(--n);
 }
 
 .user-info span {
@@ -89,7 +112,7 @@ h1 {
 }
 
 .author img {
-  border-radius: 50%;
+  border-radius: var(--avatar-radius);
 }
 
 .author {
@@ -100,12 +123,12 @@ h1 {
 }
 
 .author img {
-  height: 48px;
+  height: calc(var(--n) * 6);
 }
 
 .actions div.twitter {
-  width: 40px;
-  height: 40px;
+  width: calc(var(--n) * 5);
+  height: calc(var(--n) * 5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,4 +148,23 @@ h1 {
 .btn-o,
 .count-o {
   display: none !important;
+}
+
+.article-img {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .author {
+    margin: 16px 0;
+    width: 100vw;
+    justify-content: center;
+  }
 }

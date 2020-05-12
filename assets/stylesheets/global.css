@@ -1,9 +1,22 @@
 :root {
+  /* All pixels in styles should be any number divisible by 8 for consistency */
+  --n: 8px;
+
+  /* Colors Palette */
   --main-color: #304860;
   --light-blue: #dce6ed;
   --blue: #74b0dc;
   --shadow: 1px 2px 8px var(--light-blue);
-  --small: 16px;
-  --regular: 24px;
-  --post-title: 40px;
+
+  /* Text Size */
+  --small: calc(var(--n) * 2);
+  --regular: calc(var(--n) * 3);
+  --post-title: calc(var(--n) * 5);
+  /* border-radius:*/
+  --border-radius: 16px;
+  --border-radius-small: 8px;
+  --avatar-radius: 50%;
+  /* Margin */
+  --margin-small: 8px;
+  --margin-big: 16px;
 }

@@ -1,0 +1,30 @@
+footer {
+  color: var(--light-blue);
+  grid-area: 4 / 1 / 5 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.contact {
+  margin-left: 24px;
+}
+
+.contact a {
+  display: inline-block;
+  width: calc(var(--n) * 3);
+  height: calc(var(--n) * 3);
+  cursor: pointer;
+  background-color: var(--light-blue);
+}
+
+a.github {
+  mask-image: url(/assets/images/github.svg);
+  -webkit-mask-image: url(/assets/images/github.svg);
+}
+
+a.linkedin {
+  mask-image: url(/assets/images/linkedin.svg);
+  -webkit-mask-image: url(/assets/images/linkedin.svg);
+}

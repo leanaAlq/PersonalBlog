@@ -2,8 +2,8 @@
   padding: 0;
 }
 div.like {
-  width: 48px;
-  height: 24px;
+  width: calc(var(--n) * 6);
+  height: calc(var(--n) * 3);
   align-self: flex-end;
   display: flex;
   align-items: center;
@@ -12,9 +12,9 @@ div.like {
 button.like {
   background-image: url(/assets/images/heart.svg);
   background-position: center;
-  background-size: 20px;
-  height: 24px;
-  width: 24px;
+  background-size: calc(var(--n) * 2);
+  height: calc(var(--n) * 3);
+  width: calc(var(--n) * 3);
   background-color: transparent;
   border: 0;
   background-repeat: no-repeat;

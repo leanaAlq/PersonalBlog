@@ -1,0 +1,55 @@
+nav {
+  box-shadow: var(--shadow);
+  grid-area: 1 / 1 / 2 / 3;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home {
+  color: var(--main-color);
+  display: block;
+  width: calc(var(--n) * 10);
+  height: calc(var(--n) * 10);
+  background-image: url(../images/clouds.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  line-height: 3;
+  font-family: "Aref Ruqaa", serif;
+  font-size: calc(var(--n) * 3);
+  text-decoration: none;
+  margin-left: var(--margin-big);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-right: var(--margin-big);
+}
+
+#email {
+  border: 0;
+  padding: var(--n);
+  box-shadow: var(--shadow);
+  border-top-left-radius: var(--border-radius-small);
+  border-bottom-left-radius: var(--border-radius-small);
+  height: calc(var(--n) * 3);
+  width: calc(var(--n) * 25);
+  font-size: 1em;
+  color: var(--main-color);
+}
+
+.subscribe {
+  border-top-right-radius: var(--border-radius-small);
+  border-bottom-right-radius: var(--border-radius-small);
+  box-shadow: var(--shadow);
+  height: calc(var(--n) * 3);
+  background-color: var(--light-blue);
+  padding: var(--n) calc(var(--n) * 2);
+  font-size: 1em;
+  line-height: 1.5;
+  width: calc(var(--n) * 10);
+  text-align: center;
+}
