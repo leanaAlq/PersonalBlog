@@ -20,11 +20,11 @@ footer {
 }
 
 a.github {
-  mask-image: url(assets/images/github.svg);
-  -webkit-mask-image: url(assets/images/github.svg);
+  mask-image: url(/assets/images/github.svg);
+  -webkit-mask-image: url(/assets/images/github.svg);
 }
 
 a.linkedin {
-  mask-image: url(assets/images/linkedin.svg);
-  -webkit-mask-image: url(assets/images/linkedin.svg);
+  mask-image: url(/assets/images/linkedin.svg);
+  -webkit-mask-image: url(/assets/images/linkedin.svg);
 }
