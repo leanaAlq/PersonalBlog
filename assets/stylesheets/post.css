@@ -71,18 +71,18 @@ h1 {
 }
 
 .actions .linkedin {
-  mask: url(/images/linkedin.svg) no-repeat center;
-  -webkit-mask: url(/images/linkedin.svg) no-repeat center;
+  mask: url(../images/linkedin.svg) no-repeat center;
+  -webkit-mask: url(../images/linkedin.svg) no-repeat center;
 }
 
 .actions .twitter {
-  mask: url(/images/twitter.svg) no-repeat center;
-  -webkit-mask: url(/images/twitter.svg) no-repeat center;
+  mask: url(../images/twitter.svg) no-repeat center;
+  -webkit-mask: url(../images/twitter.svg) no-repeat center;
 }
 
 .actions .fb {
-  mask: url(/images/fb.svg) no-repeat center;
-  -webkit-mask: url(/images/fb.svg) no-repeat center;
+  mask: url(../images/fb.svg) no-repeat center;
+  -webkit-mask: url(../images/fb.svg) no-repeat center;
 }
 
 .actions .like,
