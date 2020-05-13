@@ -1,5 +1,5 @@
 footer {
-  color: var(--light-blue);
+  color: var(--blue);
   grid-area: 4 / 1 / 5 / 3;
   display: flex;
   justify-content: center;

@@ -30,7 +30,7 @@ span.time {
 span {
   display: inline-block;
   padding: var(--n) 0;
-  color: var(--light-blue);
+  color: var(--blue);
 }
 
 footer,
