@@ -10,7 +10,7 @@ div.like {
   justify-content: space-around;
 }
 button.like {
-  background-image: url(images/heart.svg);
+  background-image: url(../images/heart.svg);
   background-position: center;
   background-size: calc(var(--n) * 2);
   height: calc(var(--n) * 3);
